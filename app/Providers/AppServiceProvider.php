@@ -21,4 +21,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
+
+    protected $policies = [
+        'App\Models\Todo' => 'App\Policies\TodoPolicy',
+    ];
 }
