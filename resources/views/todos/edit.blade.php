@@ -18,6 +18,7 @@
             <textarea id="description" name="description" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">{{ old('description', $todo->description) }}</textarea>
         </div>
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Update Todo</button>
+        <a href="{{ route('todos.index') }}" class="ml-4 text-blue-500">Back to List</a>
     </form>
 </div>
 @endsection
